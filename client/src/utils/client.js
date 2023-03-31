@@ -3,7 +3,7 @@ import { onError } from 'apollo-link-error';
 import { ApolloLink, concat, from } from 'apollo-link';
 
 const httpLink = new HttpLink({
-    uri: 'http://localhost:3001/graphql',
+    uri: '/graphql',
 });
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
