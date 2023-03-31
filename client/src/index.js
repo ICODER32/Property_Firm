@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { ChakraProvider } from '@chakra-ui/react'
+import * as serviceWorker from './serviceWorker';
 
 import { ApolloProvider } from '@apollo/client';
 import client from './utils/client';
@@ -18,3 +19,4 @@ root.render(
 
 );
 
+serviceWorker.register()
